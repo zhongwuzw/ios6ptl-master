@@ -49,7 +49,7 @@ static UIFont *timeTitleFont = nil;
 -(void) drawContentView:(CGRect)r
 {    
     static UIColor *titleColor;    
-    titleColor = [UIColor darkTextColor];
+    titleColor = [UIColor darkTextColor];   //在绘制中分配资源会影响效率，所以这里采用静态变量的方法
     static UIColor *subTitleColor;    
     subTitleColor = [UIColor darkGrayColor];
     static UIColor *timeTitleColor;    
